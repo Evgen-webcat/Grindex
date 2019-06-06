@@ -60,6 +60,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'grindex.html',
+            template: './src/grindex.html'
+        }),
         new copyWebpackPlugin([{
             from: './src/fonts',
             to: './fonts'
