@@ -64,6 +64,10 @@ module.exports = {
             filename: 'grindex.html',
             template: './src/grindex.html'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'grindexforsleeps.html',
+            template: './src/grindexforsleeps.html'
+        }),
         new copyWebpackPlugin([{
             from: './src/fonts',
             to: './fonts'
