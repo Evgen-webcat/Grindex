@@ -92,6 +92,8 @@ h1
 		justify-content: space-between
 		align-items: flex-start
 		height: 100%
+		.gerba-img
+			max-width: 100%
 	&_title
 		margin-bottom: 70px
 		font-size: 3rem
@@ -124,6 +126,7 @@ h1
 	padding: 200px 0
 	&_list
 		margin-top: 75px
+		padding: 0
 		color: $blue
 		font-size: 1.625rem
 		font-weight: 300
@@ -205,6 +208,8 @@ h1
 			border: 2px solid $gray
 			background-color: #fff
 			transition: 0.3s
+			&_wrap
+				width: calc(100% - 100px)
 			&_number
 				font-size: 1.5rem
 				font-weight: 600
@@ -297,6 +302,8 @@ h1
 	&_title
 		font-size: 3rem
 		font-weight: 700
+		&_img
+			max-width: 100%
 	&_img
 		position: absolute
 		top: 
@@ -451,7 +458,8 @@ h1
 				left: calc(100% + 25px)
 		&:nth-child(6)
 			top: 472px
-			left: 230px
+			left: 50%
+			transform: translateX(-50%)
 			.composition_button_text
 				top: calc(100% + 20px)
 				left: 50%
